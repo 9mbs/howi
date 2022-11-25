@@ -65,7 +65,7 @@ export default function Gravatar({ email = '', avatar = '', size = 80 }) {
 }
 ```
 
-(Optional) Create a Loading component to account for loading behavior. You could add a better loading icon that what has been present here, we're just foucsed on simplicity.
+(Optional) Create a Loading component to account for loading behavior. You could add a better loading icon that what has been present here, we're just foucsed on simplicity. `./components/Loading.jsx`
 
 ```jsx
 export default function Loading() {
@@ -127,7 +127,7 @@ npm run dev
 
 ## Bonus: Dynamically update the Gravatar Icon
 
-So far we've covered how to set the Gravatar Icon on when the app loads. Let's go a step further an make create a form that will accept a user's email address as an input, and then update the Gravatar icon when the user submits the form.
+So far we've covered how to set the Gravatar Icon on when the app loads. Let's go a step further an make create a form that will accept a user's email address as an input, and then update the Gravatar icon when the user submits the form. `./components/GravatarChanger.jsx`
 
 ```jsx
 export default function GravatarChanger({
