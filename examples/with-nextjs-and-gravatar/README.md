@@ -1,5 +1,7 @@
 # How to build a Gravatar Icon with Next.js
 
+Preview: https://with-nextjs-and-gravatar.vercel.app/
+
 ## Building the app
 
 ### Initialize a Nextjs app
