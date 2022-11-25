@@ -16,7 +16,7 @@ npm install gravatar
 
 ### Setup an API Endpoint
 
-Create a JavaScript file to handle the `/pages/api/gravatar.js`
+Create a JavaScript file to handle the network request and send the data back to the client. `/pages/api/gravatar.js`
 
 ```js
 const gravatar = require('gravatar');
@@ -45,7 +45,7 @@ export default handler(req, res) {
 
 ### Create the React Components
 
-Create the Gravatar component.
+In a new file, create a React component called Gravatar. This component won't do anything fancy,  just render the avatar if a source is provided. `./components/Gravatar.jsx`
 
 ```jsx
 export default function Gravatar({ email = '', avatar = '', size = 80 }) {
@@ -65,7 +65,7 @@ export default function Gravatar({ email = '', avatar = '', size = 80 }) {
 }
 ```
 
-(Optional) Create a Loading component to account for loading behavior.
+(Optional) Create a Loading component to account for loading behavior. You could add a better loading icon that what has been present here, we're just foucsed on simplicity.
 
 ```jsx
 export default function Loading() {
@@ -73,7 +73,7 @@ export default function Loading() {
 }
 ```
 
-Then, modify the `pages/index.js` to serve both of these components.
+Now modify the `pages/index.js` to serve both of these components.
 
 ```jsx
 import { useEffect, useState } from 'react';
@@ -215,4 +215,4 @@ export default function Home() {
 }
 ```
 
-At this stage you have a Gravatar component that can be changed based on user input!
+At this point you have a Gravatar component that can be changed based on user input!
