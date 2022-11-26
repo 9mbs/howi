@@ -29,7 +29,7 @@ const gravatar = require('gravatar');
  * @param {string} req.body.email - User email
  * @returns {string} - Gravatar URL
  */
-export default handler(req, res) {
+export default function handler(req, res) {
   if (req.method === 'POST') {
     const { email } = req.body;
 
